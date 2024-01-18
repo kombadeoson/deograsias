@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDO Tanzania</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+
+        }
+             @media (max-width: 768px){
+            
+             }
+
+
+        
+
+        header {
+            background-color: #333;
+            color: aquamarine;
+            padding: 0em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 0em;
+        }
+
+        nav a {
+            color: violet;
+            text-decoration: none;
+        }
+
+        label for{
+            text-align: center;
+            align-items: center;
+
+        }
+        select{
+        padding-bottom: 0%;
+        color: black;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 27px;
+        width: 400px;
+        margin-bottom: 0.5em;
+        display: block;
+        width: 90%;text-decoration: #0a2966;
+            
+        }
+
+         input{
+         padding-bottom: 0;
+         color: black;
+         background-color: aqua;
+         margin-bottom: 1.1%;
+         text-align: center;
+         border-radius: 20px;
+         font-size: 28px;
+         width: 90%;
+         text-align: center;
+         }
+
+         button[type="submit"] {
+            background-color: #4569a0;
+            color: black;
+            cursor:help;
+            font-size: 16px;
+            padding: 0px 0px;
+            border: none;
+             width: 70%;
+            border-radius: 18px;
+            font-size: 20px;
+         } 
+            button:hover{
+             background-color: darkred;
+             color: rgb(211, 155, 0);
+             cursor:progress;
+             text-align: center;
+             }
+ .slider-container {
+        position: left;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 50px;
+        border-radius: 30px;
+      }
+  
+  
+      .slider-icon {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(114, 81, 19);
+        margin: 6px 0;
+        transition: 1s;
+      }
+  
+      
+  
+      .slider-content a {
+        padding: 0px;
+        text-decoration: left;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        border-radius: 30%;
+        margin: 0;
+        width: 50opx;
+        height: 3px;
+        font-size: 30px;
+        font-family: monospace;
+      }
+        #slider-container {
+      width: 100%;
+      margin: 0;
+      overflow: smooth;
+      border-radius: 10%;
+      border: #0a2966;
+    }
+
+    #slider {
+      display: flex;
+      transition: transform 1.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 120%;
+      height: fit-content;
+    }
+
+    #prev, #next {
+      cursor: pointer;
+      position: absolute;
+      top: 90%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      padding: 0px;
+      outline: none;
+    }
+
+    #prev {
+      left: 10px;
+    }
+
+    #next {
+      right: 10px;
+    }
+
+        form{
+  text-align: center;
+  max-width: 400px;
+ max-height: 800px;
+ margin: 20px auto;
+ padding: 20px;
+ backgroundcolor: aqua;
+ background-image: url(2.jpg);
+ border-radius: 30px ;
+ border-color: #0a2966;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ border: red solid 0.5px;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #888;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #333;
+}
+  
+    </style>
+</head>
+<body>
+<header>
+    <h1><b>DE7ODORANTO</b></h1>
+ <form action="/search" method="GET" style="width: 90pt;
+        height:70px; background: rgb(0, 132, 255);">
+        <input type="text" name="q" placeholder="Search..." style=" height: 25px;">
+        <button type="submit" style="border-radius: 20px; width: 90%; height: 21px;background:darkorange;">Search</button>
+    
+    </form>
+
+    <div class="social-icons">
+        <a href="https://whatsapp.com" target="_blank" style="color: rgb(9, 233, 9); "><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+        &nbsp;<a href="https://youtube.com" target="_blank" style="color: red;"><img src="youtube-icon.png" alt="YouTube"></a>
+        &nbsp;<a href="https://facebook.com" target="_blank" style="color: oldlace;"><img src="facebook-icon.png" alt="Facebook"></a>
+        &nbsp;<a href="https://tiktok.com" target="_blank" style="color: navy;"><img src="tiktok-icon.png" alt="TikTok"></a></li>
+        &nbsp;<a href="https://linkedin.com" target="_blank" style="color: yellow;"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        &nbsp;<a href="https://x.com" target="_blank"><img src="x-icon.png" alt="X"></a></li>
+    </div>
+    
+</header>
+
+<nav>
+    <a href="#" onclick="showPage('home-page')">Home</a>
+    <a href="#" onclick="showPage('registration-page')">Registration</a>
+    <a href="#" onclick="showPage('contact-page')">Contact Us</a>
+    <a href="#" onclick="showPage('privacy-page')">Privacy Policy</a>
+    <a href="#" onclick="showPage('about-page')">About Us</a>
+</nav>
+   
+
+
+<!-- Home Page -->
+
+<section id="home-page" style="text-align: center; background-color: aquamarine;">
+    
+    
+    
+    <h1 style="color: peru;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        WELCOME </h1>
+        
+       <p><strong><em>&nbsp;Our organization relies on providing the enhansive and productivity to targeted goals with our scholars.</em></strong><br></p>
+        
+       <h1> OUR SERVICE<br></h1>
+        
+         <p> <b>&nbsp;&nbsp;main services or products is to provide quality as well quantity experience,knowledge and skills which will enables our scholars to enter the world class competitive market to be employed or starting the own bussiness running </b></p>
+         <div id="slider-container">
+            <div id="slider">
+              <div class="slide"><img src="1.jpg" alt="Slide 1"></div>
+              <div class="slide"><img src="2.jpg" alt="Slide 2"></div>
+              <div class="slide"><img src="3.jpg" alt="Slide 3"></div>
+              <div class="slide"><img src="4.jpg" alt="Slide 4"></div>
+              <div class="slide"><img src="5.jpg" alt="Slide 5"></div>
+              <div class="slide"><img src="6.jpg" alt="Slide 6"></div>
+              <div class="slide"><img src="7.jpg" alt="Slide 7"></div>
+              <div class="slide"><img src="1.jpeg" alt="Slide 8"></div>
+        </div>
+    
+         </div>          
+        
+</section>
+
+
+
+
+<!-- Registration Form Page -->
+<section id="registration-page" style="display: none;">
+    <h2 style="text-align: center;">REGISTRATION FORM</h2>
+    <form id="registration-form" onsubmit="validateForm(); return false;">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="fullName" required>
+
+        <label for="registrationNumber">Registration Number :</label>
+        <input type="text" id="registrationNumber" name="registrationNumber" pattern="BCS-\d{2}-\d{3}-\d{4}" placeholder="BCS-00-000-0000" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+         
+        <label for="phone_no">Phone_No</label>
+            <input type="tel" id="Phone_No" name="Phone_No" placeholder="+255_000_000_0000" necessary><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="#">Other</option>
+
+            <!-- Add more gender options as needed -->
+            </select>
+    
+
+            <label for="region">Region:</label>
+            <select id="region" name="region" onchange="loadDistricts()">
+                <option value="" disabled selected>Select your region</option>
+            </select>
+    
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="" disabled selected>Select your district</option>
+            </select>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <div class="move" style="background-color:"> 
+            <input type="checkbox" id="show-password" onchange="togglePasswordVisibility()" >
+           <label for="show-password"></label>
+        </div>
+        </div>
+
+        
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+
+
+<!-- Contact Us Page -->
+<section id="contact-page" style="display: none;
+text-align: center;
+color: blue;
+background-color: aqua;">
+    
+    </div>
+    <h2><a call>CALL</a></h2>
+        <p>0766514487</p><br><p>022008834</p><br>
+        <h2><a mail>MAIL</a></h2>
+         <p> qwe@gmail.com</p><br>
+         <h2><a social media>SOCIAL MEDIA</a></h2>
+         <p>qwe@instagram.com</p><br>
+        <p>qwe@twiter.com</p><br>
+        <p>qwe@yahoo.com</p><br>
+      
+    
+    
+    
+    <!-- Add your contact information and form here -->
+</section>
+
+
+
+
+
+
+<!-- Privacy Policy Page -->
+<section id="privacy-page" style="display: none;
+text-align: center;">
+    <h2>Privacy Policy</h2>
+    
+    <h2>1. Introduction</h2><br>
+    
+   <p> We respects your privacy and is committed to protecting your personal information. This Privacy Policy describes how we collect, use, disclose, and protect the personal information you provide when using our registration system.</p>
+    
+    <br><h2>2.Information We Collect</h2>
+    
+    &nbsp;<h3>2.1 Personal Information</h3>
+    <br>
+   <p> We may collect the following personal information from you during the registration process:
+    
+    <br>- Full name
+    <br>- Email address
+    <br>- Region and District
+    <br>- Username and password</p>
+    
+    
+   <h3> 2.2 Non-Personal Information</h3>
+    
+   <p> We may also collect certain non-personal information automatically, such as your IP address, browser type, device information, and usage statistics, to improve our registration system and enhance the user experience.</p>
+    
+   <br> <h2>3. Use of Information</h2>
+    
+   <p> We may use your personal information for the following purposes:
+    
+    - To facilitate your registration and provide access to our services
+    - To communicate with you regarding your account, system updates, and important announcements
+    - To personalize your experience and improve our services
+    - To analyze user behavior and preferences, and for market research
+    - To enforce our terms of service and protect our rights and interests
+    - To comply with legal obligations</p>
+    
+    <br><h2>4. Data Sharing and Disclosure</h2>
+    
+    <p>We may share your personal information with the following third parties:
+    
+    - Service providers and business partners who assist us in delivering our services
+    - Law enforcement agencies, regulatory authorities, or other third parties when required by law or to protect our legal rights
+    - In the event of a merger, acquisition, or sale of all or a portion of our business, your personal information may be transferred to the new owners
+    </p>
+   <br> <h2>5. Security</h2>
+    
+   <p> We implement reasonable security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    
+    <br><h2> 6.Cookies and Tracking Technologies</h2>
+    
+   <p> We may use cookies and similar tracking technologies to collect and store certain information about your usage patterns and preferences. You can modify your browser settings to disable cookies or receive alerts when cookies are being sent, but this may affect your ability to use our registration system.</p>
+    
+    <br><h2>7. Your Rights</h2><br><br>
+    
+    <p>You have the right to access, correct, update, or delete your personal information held by us. You may also opt-out of receiving marketing communications from us.</p>
+    
+    <br><h2>8. Children's Privacy</h2>
+    
+    <p>Our registration system is not intended for use by individuals under the age of [minimum age]. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately.</p>
+    
+    <br><h2>9. Changes to this Privacy Policy</h2>
+    
+    <p>We reserve the right to update or modify this Privacy Policy at any time. We will notify you of any material changes by posting the revised version on our registration system or through other appropriate communication channels.</p>
+    
+    <br><h2>10. Contact Us</h2>
+    
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our practices, please <a  href="" us>contact us</a>  and we will respond as soon as possible.</p>
+  <br><br>
+
+
+    <!-- Add your privacy policy content here -->
+</section>
+
+
+
+
+
+
+<!-- About Us Page -->
+<section id="about-page" style="display: none;
+text-align: center;">
+    <h2>About Us</h2>
+    <p>Our organization is a leading educational institution dedicated to providing high-quality accounting education and professional training. We are committed to nurturing talented individuals and equipping them with the knowledge and skills needed for successful careers in the located sectors.</p><br><br>
+    
+    &nbsp;&nbsp;<h2> Our Mission</h2>
+      
+     
+  <p>Our Mission at organization, is to be a center of excellence in  education and professional development. We aim to empower our students with the necessary theoretical foundation, practical expertise, and ethical values to excel in their accounting careers and contribute to the growth and development of the business community.</p><br><br>
+      
+      &nbsp;&nbsp; <h2> Programs we offer</h2>
+      <p> A range of comprehensive programs designed to meet the diverse needs of students and professionals at various stages of their journey. </p>
+      
+      &nbsp;&nbsp; <h2> Faculty dedicated</h2>
+      <p> faculty consists of experienced professionals and academics with a wealth of practical knowledge and expertise in the field of accounting. They are committed to delivering high-quality education, fostering critical thinking, and providing mentorship to our students.</p><br><br>
+      
+      &nbsp;&nbsp; <h2>facilities and Resources</h2>
+      <p> We provide state-of-the-art facilities and resources to support effective learning and professional development. Our campus includes well-equipped classrooms, computer labs, a library with a wide range of accounting resources, and a dedicated team of staff members to assist students throughout their academic journey.</p><br><br>
+      
+      &nbsp;&nbsp;<h2> Partnerships and Affiliation</h2>
+      <p> We have established strong partnerships and affiliations with local and international professional accounting bodies, ensuring that our programs are aligned with industry standards and providing our students with opportunities for professional recognition and career advancement.</p><br><br>
+      
+      &nbsp;&nbsp;<h2> Contact Us</h2>
+      <p> If you have any questions or would like to learn more about the organization, please feel free to <a href="">contact us</a>. About our organization</p><br><br>
+      </p>
+  
+
+   
+    
+    <!-- Add information about the organization here -->
+</section>
+
+<footer >
+
+
+    <footer>
+        <ul class="social-icons">
+            <a href="#" title="Like"><img src="like-icon.png" alt="Like"></a>
+            &nbsp;&nbsp;<a href="#" title="Dislike"><img src="dislike-icon.png" alt="Dislike"></a>
+            &nbsp;&nbsp;<a href="#" title="Comment"><img src="comment-icon.png" alt="Comment"></a>
+            &nbsp;&nbsp;<a href="#" title="Share"><img src="share-icon.png" alt="Share"></a>
+        </ul>
+        <p style="color: black;">DeodorantoLinux &copy; 2023 All right reserved</p>
+    </footer>
+
+    <div class="footer-icons">
+        <a href="#"><i class="fas fa-thumbs-up"></i></a>
+        <a href="#"><i class="fas fa-thumbs-down"></i></a>
+        <a href="#"><i class="fas fa-comment"></i></a>
+        <a href="#"><i class="fas fa-share"></i></a>
+      </div>
+    </footer>
+</body>
+
+
+<script>
+    // JavaScript for form validation and AJAX setup
+    function validateForm() {
+        // Add your form validation logic here using JavaScript
+
+        // Example: Check if password and password confirmation match
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+            alert("Password and password confirmation do not match");
+            return;
+        }
+    }
+    function togglePasswordVisibility(){
+          var passwordInput = document.getElementById("password");
+          var confirmInput = document.getElementById("confirm_password");
+  
+          if (passwordInput.type === "password") {
+              passwordInput.type = "text";
+              confirmInput.type = "text";
+          } else {
+              passwordInput.type = "password";
+              confirmInput.type = "password";
+          }
+      }
+  // Simulated data for regions and districts
+var regionsData = [
+    { id: 1, name: 'Arusha' },
+    { id: 2, name: 'Dar es Salaam' },
+    { id: 3, name: 'Dodoma' },
+    { id: 4, name: 'Geita' },
+    { id: 5, name: 'Iringa' },
+    { id: 6, name: 'Kagera' },
+    { id: 7, name: 'Katavi' },
+    { id: 8, name: 'Kigoma' },
+    { id: 9, name: 'Kilimanjaro' },
+    { id: 10, name: 'Lindi' },
+    { id: 11, name: 'Manyara' },
+    { id: 12, name: 'Mara' },
+    { id: 13, name: 'Mbeya' },
+    { id: 14, name: 'Morogoro' },
+    { id: 15, name: 'Mtwara' },
+    { id: 16, name: 'Mwanza' },
+    { id: 17, name: 'Njombe' },
+    { id: 18, name: 'Pemba Kaskazini' },
+    { id: 19, name: 'Pemba Kusini' },
+    { id: 20, name: 'Pwani' },
+    { id: 21, name: 'Rukwa' },
+    { id: 22, name: 'Ruvuma' },
+    { id: 23, name: 'Shinyanga' },
+    { id: 24, name: 'Simiyu' },
+    { id: 25, name: 'Singida' },
+    { id: 26, name: 'Songwe' },
+    { id: 27, name: 'Tabora' },
+    { id: 28, name: 'Tanga' },
+    { id: 29, name: 'Unguja Kaskazini' },
+    { id: 30, name: 'Unguja Kusini' }
+];
+
+var districtsData = {
+    1: ['Arusha Mjini', 'Arusha Vijijini', 'Meru'],
+    2: ['Ilala', 'Kinondoni', 'Temeke', 'Kigamboni'],
+    3: [ 'Dodoma mjini','bahi','chamwino','chemba','kondoa','kongwa','mpwapwa'],
+    4: ['Bukombe', 'Chato', 'Geita Mjini'],
+    5: ['Iringa Mjini', 'Iringa Vijijini', 'Kilolo', 'Mafinga', 'Mufindi'],
+    6: ['Biharamulo', 'Bukoba Mjini', 'Bukoba Vijijini', 'Karagwe', 'Kyela', 'Missenyi', 'Muleba', 'Ngara'],
+    7: ['Mlele', 'Mpanda Mjini', 'Mpanda Vijijini'],
+    8: ['Buhigwe', 'Kakonko', 'Kasulu Mjini', 'Kasulu Vijijini', 'Kibondo', 'Kigoma Mjini', 'Kigoma Vijijini', 'Uvinza'],
+    9: ['Hai', 'Moshi Mjini', 'Moshi Vijijini', 'Mwanga', 'Rombo', 'Siha'],
+    10: ['Kilwa', 'Lindi Mjini', 'Lindi Vijijini', 'Liwale', 'Nachingwea', 'Ruangwa'],
+    11: ['Babati Mjini', 'Babati Vijijini', 'Hanang', 'Kiteto', 'Mbulu', 'Simanjiro'],
+    12: ['Bunda', 'Butiama', 'Musoma Mjini', 'Musoma Vijijini', 'Rorya', 'Serengeti', 'Tarime'],
+    13: ['Busokelo', 'Chunya', 'Kyela', 'Mbarali', 'Mbeya Mjini', 'Mbeya Vijijini', 'Rungwe'],
+    14: ['Gairo', 'Kilombero', 'Kilosa', 'Morogoro Mjini', 'Morogoro Vijijini', 'Mvomero', 'Ulanga', 'Malinyi'],
+    15: ['Masasi Mjini', 'Masasi Vijijini', 'Mtwara Mjini', 'Mtwara Vijijini', 'Nanyumbu', 'Newala'],
+    16: ['Ilemela', 'Kwimba', 'Magu', 'Misungwi', 'Nyamagana', 'Sengerema', 'Ukerewe'],
+    17: ['Ludewa', 'Makambako', 'Makete', 'Njombe Mjini', 'Njombe Vijijini', 'Wanging’ombe'],
+    18: ['Micheweni', 'Wete'],
+    19: ['Chake Chake', 'Mkoani'],
+    20: ['Bagamoyo', 'Kibaha Mjini', 'Kibaha Vijijini', 'Kisarawe', 'Mafia', 'Mkuranga', 'Rufiji'],
+    21: ['Kalambo', 'Nkasi', 'Sumbawanga Mjini', 'Sumbawanga Vijijini'],
+    22: ['Mbinga', 'Namtumbo', 'Songea Mjini', 'Songea Vijijini', 'Tunduru','Nyasa'],
+    23: ['Kahama Mjini', 'Kahama Vijijini', 'Kishapu', 'Shinyanga Mjini', 'Shinyanga Vijijini'],
+    24: ['Bariadi', 'Busega', 'Itilima', 'Maswa', 'Meatu'],
+    25: ['Iramba', 'Manyoni', 'Singida Mjini', 'Singida Vijijini'],
+    26: ['Ileje', 'Ileje', 'Mbozi', 'Momba'],
+    27: ['Igunga', 'Kaliua', 'Nzega', 'Sikonge', 'Tabora Mjini', 'Urambo', 'Uyui'],
+    28: ['Handeni Mjini', 'Handeni Vijijini', 'Kilindi', 'Korogwe Mjini', 'Korogwe Vijijini', 'Lushoto', 'Muheza', 'Pangani'],
+    29: ['Kaskazini A', 'Kaskazini B'],
+    30: ['Kusini A', 'Kusini B']
+};
+
+// Function to populate options for the regions dropdown
+function loadRegions() {
+    var regionSelect = document.getElementById('region');
+    regionSelect.innerHTML = '<option value="" disabled selected>Select your region</option>';
+
+    regionsData.forEach(function(region) {
+        var option = document.createElement('option');
+        option.value = region.id;
+        option.text = region.name;
+        regionSelect.add(option);
+    });
+}
+
+// Function to populate options for the districts dropdown based on the selected region
+function loadDistricts() {
+    var regionSelect = document.getElementById('region');
+    var districtSelect = document.getElementById('district');
+    var selectedRegionId = regionSelect.value;
+
+    districtSelect.innerHTML = '<option value="" disabled selected>Select your district</option>';
+
+    if (selectedRegionId && districtsData[selectedRegionId]) {
+        districtsData[selectedRegionId].forEach(function(district) {
+            var option = document.createElement('option');
+            option.value = district;
+            option.text = district;
+            districtSelect.add(option);
+        });
+    }
+}
+
+// Function to initialize the form with regions
+function initializeForm() {
+    loadRegions();
+    loadDistricts(); // Initial loading of districts based on the default selected region (if any)
+}
+// Initialize the form when the page loads
+window.onload = initializeForm;
+
+
+    function showPage(pageId) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(pageId).style.display = 'block';
+    }
+    let currentSlide = 0;
+
+function showSlide(index) {
+  const slider = document.getElementById('slider');
+  const slides = document.getElementsByClassName('slide');
+
+  if (index >= slides.length) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide = index;
+  }
+
+  const offset = -currentSlide * 100 + '%';
+  slider.style.transform = `translateX(${offset})`;
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+// Auto play the slider
+setInterval(nextSlide, 3000);
+
+
+
+</script>
+
+</html>
+
